@@ -1,0 +1,12 @@
+<ActorFrame><children>
+<Layer
+		File="CJ126.mpg"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomtowidth,SCREEN_WIDTH;zoomtoheight,SCREEN_WIDTH/4*3"
+		Offcommand="sleep,1.9;linear,0.3;diffusealpha,0;"
+	/>
+	<Layer 
+		File="H4Xi"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;shadowlength,0;zoom,.8;pulse;EffectMagnitude,1.0,0.95,0;effectclock,bgm;effectperiod,1"
+		Offcommand="sleep,1.9;linear,0.3;diffusealpha,0;"
+	/>
+</children></ActorFrame>

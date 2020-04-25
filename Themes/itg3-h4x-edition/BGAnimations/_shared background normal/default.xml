@@ -1,0 +1,26 @@
+<ActorFrame>
+	<children>
+		<Layer
+			Type="AutoActor"
+			File="@THEME:GetPath(EC_BGANIMATIONS,'','_shared background no streaks')"
+			InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;wag;EffectMagnitude,10,0,0;EffectPeriod,8"
+		/>
+		<Layer
+			Type="ActorFrame"
+			OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;wag;EffectMagnitude,10,0,0;EffectPeriod,8" 
+		>
+		</Layer>
+		<Layer Type="ActorFrame" FOV="45" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;rotationz,-30;rotationx,-30;rotationy,-15"><children>
+			<Layer
+				Type="AutoActor"
+				File="arrow.txt"
+				OnCommand="diffusealpha,0.12;zoom,2;wag;EffectMagnitude,0,0,5;EffectPeriod,5"
+			/>
+		</children></Layer>
+		<!-- clear the zbuffer so that screens can draw without having to clear it -->
+		<Layer
+			Type="Quad"
+			OnCommand="clearzbuffer,1;zoom,0"
+		/>		
+	</children>
+</ActorFrame>
