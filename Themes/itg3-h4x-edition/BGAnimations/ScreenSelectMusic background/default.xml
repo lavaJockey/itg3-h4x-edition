@@ -9,4 +9,9 @@
 		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;shadowlength,0;zoom,.8;pulse;EffectMagnitude,1.0,0.95,0;effectclock,bgm;effectperiod,1"
 		Offcommand="sleep,1.9;linear,0.3;diffusealpha,0;"
 	/>
+	<Layer
+		File="H4Xi"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoom,.8;additiveblend,1;diffuseblink;effectcolor1,0.5,0.5,0.5,.85;effectdelay,.6;effectperiod,0.4;effectoffset,0.2;effectclock,bgm"
+		OffCommand="sleep,1.9;linear,0.3;diffusealpha,0;"
+	/>
 </children></ActorFrame>
