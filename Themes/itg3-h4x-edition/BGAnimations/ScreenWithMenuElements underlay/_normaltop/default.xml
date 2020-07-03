@@ -24,11 +24,28 @@
 		OffCommand="accelerate,0.5;addy,-100"
 	/>
 <Layer
-		File="light"
-		InitCommand="Additiveblend,1;zoomtowidth,SCREEN_WIDTH/0;x,SCREEN_CENTER_X;y,SCREEN_TOP+45;sleep,1.0;zoomtowidth,SCREEN_WIDTH;diffusealpha,0;linear,0.5;diffusealpha,1;sleep,0.6;linear,0.5;diffusealpha,0"
-		OnCommand="sleep,0.6;diffusealpha,1;cropleft,-0.3;cropright,1;faderight,.1;fadeleft,.1;sleep,0.5;diffusealpha,1;linear,3;cropleft,+1;cropright,-0.3;sleep,0.1;queuecommand,On"
-		OffCommand="stoptweening;linear,0.2;diffusealpha,0"		
-	/> 
+		Type="Autoactor"
+		File="_lightwidth"
+		InitCommand="x,SCREEN_LEFT+180;vertalign,top;horizalign,left;zoomtowidth,SCREEN_WIDTH-630;y,SCREEN_TOP-100;decelerate,0.8;y,SCREEN_TOP;additiveblend,1"
+		OnCommand="diffusealpha,0;linear,0.5;diffusealpha,1;sleep,0.6;linear,0.5;diffusealpha,0;queuecommand,On"
+		OffCommand="stoptweening;linear,0.2;diffusealpha,0"
+	/>
+<Layer
+		Type="Autoactor"
+		File="_lightlside"
+		InitCommand="x,SCREEN_LEFT;horizalign,left;vertalign,top;y,SCREEN_TOP-100;decelerate,0.8;y,SCREEN_TOP;additiveblend,1"
+		OnCommand="diffusealpha,0;linear,0.5;diffusealpha,1;sleep,0.6;linear,0.5;diffusealpha,0;queuecommand,On"
+		OffCommand="stoptweening;linear,0.2;diffusealpha,0"
+	/>
+
+
+<Layer
+		Type="Autoactor"
+		File="_lightrside"
+		InitCommand="x,SCREEN_RIGHT;horizalign,right;vertalign,top;y,SCREEN_TOP-100;decelerate,0.8;y,SCREEN_TOP;additiveblend,1"
+		OnCommand="diffusealpha,0;linear,0.5;diffusealpha,1;sleep,0.6;linear,0.5;diffusealpha,0;queuecommand,On"
+		OffCommand="stoptweening;linear,0.2;diffusealpha,0"
+	/>
 			</children>
 
 
