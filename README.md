@@ -10,3 +10,7 @@ Setup:
 3. Then change the theme through OpenITG!
 4. Done!
 (NotITG is usable but will affect some animations and ruin some things!!!)
+
+What is the Nostalgia noteskin:
+The Nostalgia noteskin is the base of the default/note noteskin from SM3.9
+But with default ITG note colors and note explosion colors.

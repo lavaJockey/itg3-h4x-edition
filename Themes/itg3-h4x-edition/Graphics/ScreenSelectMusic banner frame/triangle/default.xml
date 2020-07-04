@@ -22,6 +22,7 @@
 		File="blueflare"
 		InitCommand="x,SCREEN_CENTER_X-60;y,SCREEN_CENTER_Y-10;additiveblend,1"
 		OnCommand="playcommand,Refresh"
+		OffCommand="stoptweening,1;diffusealpha,0"
 		RefreshCommand="%function(self)
 				self:stoptweening(1); self:zoom(0); self:diffusealpha(1); self:sleep(0.6); 
 				self: accelerate(0.5); self:zoom(5) self:diffusealpha(0); end" 

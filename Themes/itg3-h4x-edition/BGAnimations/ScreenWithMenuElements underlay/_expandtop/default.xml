@@ -28,9 +28,9 @@
 <Layer
 		Type="Autoactor"
 		File="_lightwidth"
-		InitCommand="x,SCREEN_LEFT+180;vertalign,top;horizalign,left;zoomtowidth,SCREEN_WIDTH-630;y,SCREEN_TOP-100;decelerate,0.8;y,SCREEN_TOP;additiveblend,1"
-		OnCommand="diffusealpha,0;linear,0.5;diffusealpha,1;sleep,0.6;linear,0.5;diffusealpha,0;queuecommand,On"
-		OffCommand="stoptweening;linear,0.2;diffusealpha,0"
+		InitCommand="x,SCREEN_LEFT+180;vertalign,top;horizalign,left;zoomtowidth,SCREEN_WIDTH-630;additiveblend,1"
+		OnCommand="y,SCREEN_TOP-100;decelerate,0.8;y,SCREEN_TOP;diffusealpha,0;linear,1;diffusealpha,1;linear,1;diffusealpha,0;queuecommand,On"
+		OffCommand="stoptweening;accelerate,0.5;addy,-100"
 	/>
 
 
@@ -38,16 +38,16 @@
 <Layer
 		Type="Autoactor"
 		File="_lightlside"
-		InitCommand="x,SCREEN_LEFT;horizalign,left;vertalign,top;y,SCREEN_TOP-100;decelerate,0.8;y,SCREEN_TOP;additiveblend,1"
-		OnCommand="diffusealpha,0;linear,0.5;diffusealpha,1;sleep,0.6;linear,0.5;diffusealpha,0;queuecommand,On"
-		OffCommand="stoptweening;linear,0.2;diffusealpha,0"
+		InitCommand="x,SCREEN_LEFT;horizalign,left;vertalign,top;additiveblend,1"
+		OnCommand="y,SCREEN_TOP-100;decelerate,0.8;y,SCREEN_TOP;diffusealpha,0;linear,1;diffusealpha,1;linear,1;diffusealpha,0;queuecommand,On"
+		OffCommand="stoptweening;accelerate,0.5;addy,-100"
 	/>
 <Layer
 		Type="Autoactor"
 		File="_lightrside"
-		InitCommand="x,SCREEN_RIGHT;horizalign,right;vertalign,top;y,SCREEN_TOP-100;decelerate,0.8;y,SCREEN_TOP;additiveblend,1"
-		OnCommand="diffusealpha,0;linear,0.5;diffusealpha,1;sleep,0.6;linear,0.5;diffusealpha,0;queuecommand,On"
-		OffCommand="stoptweening;linear,0.2;diffusealpha,0"
+		InitCommand="x,SCREEN_RIGHT;horizalign,right;vertalign,top;additiveblend,1"
+		OnCommand="y,SCREEN_TOP-100;decelerate,0.8;y,SCREEN_TOP;diffusealpha,0;linear,1;diffusealpha,1;linear,1;diffusealpha,0;queuecommand,On"
+		OffCommand="stoptweening;accelerate,0.5;addy,-100"
 	/>
 			</children>
 </ActorFrame>
