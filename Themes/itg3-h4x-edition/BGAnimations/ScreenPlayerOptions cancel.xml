@@ -6,7 +6,7 @@
 		StartTransitioningCommand="%function(self) SCREENMAN:GetTopScreen():playcommand('Off') end"
 	/>
 	<Actor
-		File="_menu out"
+		File="_playeroptions cancel"
 	/>
 </children> </ActorFrame>
 

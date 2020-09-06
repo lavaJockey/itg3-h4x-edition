@@ -227,6 +227,7 @@ RefreshCommand="%
 		File="..\_overlay\joinin"
 		InitCommand="zoom,.6;x,10"
 				JoinedCommand="linear,.2;diffusealpha,0;"
+							OffCommand="linear,.5;addx,170;"
 
 	/>
 <Layer
@@ -235,24 +236,28 @@ RefreshCommand="%
 		Text="PRESS"
 		InitCommand="x,-33;shadowlength,2;zoom,0.6"
 				JoinedCommand="linear,.2;diffusealpha,0;"
+						OffCommand="linear,.5;addx,170;"
 
 	/>
 <Layer
 		File="..\_common base start button"
 		InitCommand="addx,11;shadowlength,0;zoom,0.5"
 				JoinedCommand="linear,.2;diffusealpha,0;"
+						OffCommand="linear,.5;addx,170;"
 
 	/>
 <Layer
 		File="..\_common start button"
 		InitCommand="addx,11;shadowlength,0;diffuseshift;effectcolor1,#FFFFFF;effectcolor2,#858585;zoom,0.5;effectclock,beat"
 				JoinedCommand="linear,.2;diffusealpha,0;"
+						OffCommand="linear,.5;addx,170;"
 
 	/>
 <Layer
 		File="..\_common glow start button"
 		InitCommand="addx,11;additiveblend,1;shadowlength,0;diffuseshift;effectcolor1,#6BFF75;effectcolor2,#FFFFFF00;zoom,0.5;effectclock,beat"
 				JoinedCommand="linear,.2;diffusealpha,0;"
+						OffCommand="linear,.5;addx,170;"
 
 	/>			
 </children></ActorFrame>
